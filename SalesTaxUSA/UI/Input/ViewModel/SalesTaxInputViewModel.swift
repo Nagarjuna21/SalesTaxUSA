@@ -88,6 +88,11 @@ class SalesTaxInputModel {
             return (nil, err)
         }
 
+        guard let _ = TaxServiceManager.shared.stateTaxRates[retData] else {
+            let err = NSError(domain: "", code: -3, userInfo: [NSLocalizedDescriptionKey : "Incorrect state code."])
+            return (nil, err)
+        }
+
         return (retData, nil)
     }
 }
