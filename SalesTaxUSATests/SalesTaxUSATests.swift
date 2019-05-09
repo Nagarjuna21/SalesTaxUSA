@@ -12,23 +12,39 @@ import XCTest
 class SalesTaxUSATests: XCTestCase {
 
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        TaxServiceManager.shared.updateWithSampleData()
     }
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testThatSampleDataAreLoaded() {
+        let statesCounter = TaxServiceManager.shared.stateTaxRates.count
+        let discountCounter = TaxServiceManager.shared.stateTaxRates.count
+
+        print("states count: %d", statesCounter)
+        print("discounts count: %d", discountCounter)
+
+        XCTAssertTrue(discountCounter > 0)
+        XCTAssertTrue(statesCounter > 0)
     }
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testThatStateCodeValidationIsCorrect() {
+        let code = "UT"
+        let result = SalesTaxInputModel.validateStateCodeData(code)
+
+        XCTAssertNotNil(result.0)
+        XCTAssertNil(result.1)
     }
+
+    func testThatStateCodeValidationCanCatchIncorrectCode() {
+        let code = "MN"
+        let result = SalesTaxInputModel.validateStateCodeData(code)
+
+        XCTAssertNil(result.0)
+        XCTAssertNotNil(result.1)
+    }
+
 
 }

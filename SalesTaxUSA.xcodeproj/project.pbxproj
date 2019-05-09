@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		CE5DAFE92281C30900D5F6EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DAFE82281C30900D5F6EC /* AppDelegate.swift */; };
-		CE5DAFEB2281C30900D5F6EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DAFEA2281C30900D5F6EC /* ViewController.swift */; };
 		CE5DAFEE2281C30900D5F6EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5DAFEC2281C30900D5F6EC /* Main.storyboard */; };
 		CE5DAFF02281C30D00D5F6EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5DAFEF2281C30D00D5F6EC /* Assets.xcassets */; };
 		CE5DAFF32281C30D00D5F6EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5DAFF12281C30D00D5F6EC /* LaunchScreen.storyboard */; };
 		CE5DAFFE2281C30E00D5F6EC /* SalesTaxUSATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DAFFD2281C30E00D5F6EC /* SalesTaxUSATests.swift */; };
 		CE5DB0092281C30E00D5F6EC /* SalesTaxUSAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DB0082281C30E00D5F6EC /* SalesTaxUSAUITests.swift */; };
+		CE5DB0192281C3EE00D5F6EC /* TaxItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DB0182281C3EE00D5F6EC /* TaxItem.swift */; };
+		CE5DB01B2281C4D800D5F6EC /* TaxServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DB01A2281C4D800D5F6EC /* TaxServiceManager.swift */; };
+		CE5DB0222281D13800D5F6EC /* SalesTaxInputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DB0212281D13800D5F6EC /* SalesTaxInputVC.swift */; };
+		CE5DB0242281D15100D5F6EC /* SalesTaxInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DB0232281D15100D5F6EC /* SalesTaxInputViewModel.swift */; };
+		CE5DB0292282D44600D5F6EC /* SalesTaxOutputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DB0282282D44600D5F6EC /* SalesTaxOutputVC.swift */; };
+		CE5DB02B2282D4D900D5F6EC /* SalesTaxItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DB02A2282D4D900D5F6EC /* SalesTaxItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,6 @@
 /* Begin PBXFileReference section */
 		CE5DAFE52281C30900D5F6EC /* SalesTaxUSA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalesTaxUSA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5DAFE82281C30900D5F6EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE5DAFEA2281C30900D5F6EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE5DAFED2281C30900D5F6EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE5DAFEF2281C30D00D5F6EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE5DAFF22281C30D00D5F6EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,12 @@
 		CE5DB0042281C30E00D5F6EC /* SalesTaxUSAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalesTaxUSAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5DB0082281C30E00D5F6EC /* SalesTaxUSAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesTaxUSAUITests.swift; sourceTree = "<group>"; };
 		CE5DB00A2281C30E00D5F6EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE5DB0182281C3EE00D5F6EC /* TaxItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxItem.swift; sourceTree = "<group>"; };
+		CE5DB01A2281C4D800D5F6EC /* TaxServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxServiceManager.swift; sourceTree = "<group>"; };
+		CE5DB0212281D13800D5F6EC /* SalesTaxInputVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesTaxInputVC.swift; sourceTree = "<group>"; };
+		CE5DB0232281D15100D5F6EC /* SalesTaxInputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesTaxInputViewModel.swift; sourceTree = "<group>"; };
+		CE5DB0282282D44600D5F6EC /* SalesTaxOutputVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesTaxOutputVC.swift; sourceTree = "<group>"; };
+		CE5DB02A2282D4D900D5F6EC /* SalesTaxItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesTaxItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +107,9 @@
 		CE5DAFE72281C30900D5F6EC /* SalesTaxUSA */ = {
 			isa = PBXGroup;
 			children = (
+				CE5DB0172281C33F00D5F6EC /* Business */,
+				CE5DB0162281C33700D5F6EC /* UI */,
 				CE5DAFE82281C30900D5F6EC /* AppDelegate.swift */,
-				CE5DAFEA2281C30900D5F6EC /* ViewController.swift */,
 				CE5DAFEC2281C30900D5F6EC /* Main.storyboard */,
 				CE5DAFEF2281C30D00D5F6EC /* Assets.xcassets */,
 				CE5DAFF12281C30D00D5F6EC /* LaunchScreen.storyboard */,
@@ -123,6 +134,90 @@
 				CE5DB00A2281C30E00D5F6EC /* Info.plist */,
 			);
 			path = SalesTaxUSAUITests;
+			sourceTree = "<group>";
+		};
+		CE5DB0162281C33700D5F6EC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DB01D2281D0F000D5F6EC /* Output */,
+				CE5DB01C2281D0E500D5F6EC /* Input */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CE5DB0172281C33F00D5F6EC /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DB0182281C3EE00D5F6EC /* TaxItem.swift */,
+				CE5DB01A2281C4D800D5F6EC /* TaxServiceManager.swift */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		CE5DB01C2281D0E500D5F6EC /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DB0202281D11B00D5F6EC /* View */,
+				CE5DB01F2281D11200D5F6EC /* Controller */,
+				CE5DB01E2281D10900D5F6EC /* ViewModel */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		CE5DB01D2281D0F000D5F6EC /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DB0272282D42300D5F6EC /* ViewModel */,
+				CE5DB0262282D41E00D5F6EC /* View */,
+				CE5DB0252282D41500D5F6EC /* Controller */,
+			);
+			path = Output;
+			sourceTree = "<group>";
+		};
+		CE5DB01E2281D10900D5F6EC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DB0232281D15100D5F6EC /* SalesTaxInputViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE5DB01F2281D11200D5F6EC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DB0212281D13800D5F6EC /* SalesTaxInputVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CE5DB0202281D11B00D5F6EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE5DB0252282D41500D5F6EC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DB0282282D44600D5F6EC /* SalesTaxOutputVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CE5DB0262282D41E00D5F6EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DB02A2282D4D900D5F6EC /* SalesTaxItemCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE5DB0272282D42300D5F6EC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +351,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE5DAFEB2281C30900D5F6EC /* ViewController.swift in Sources */,
+				CE5DB0192281C3EE00D5F6EC /* TaxItem.swift in Sources */,
+				CE5DB0242281D15100D5F6EC /* SalesTaxInputViewModel.swift in Sources */,
+				CE5DB01B2281C4D800D5F6EC /* TaxServiceManager.swift in Sources */,
+				CE5DB0222281D13800D5F6EC /* SalesTaxInputVC.swift in Sources */,
+				CE5DB0292282D44600D5F6EC /* SalesTaxOutputVC.swift in Sources */,
 				CE5DAFE92281C30900D5F6EC /* AppDelegate.swift in Sources */,
+				CE5DB02B2282D4D900D5F6EC /* SalesTaxItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
