@@ -134,7 +134,7 @@
                     <navigationItem key="navigationItem" title="SALES" id="1Kd-R3-HAz">
                         <barButtonItem key="rightBarButtonItem" systemItem="organize" id="pyN-EI-tDz">
                             <connections>
-                                <segue destination="wsY-hq-xYk" kind="showDetail" id="RDu-TI-8tX"/>
+                                <segue destination="wsY-hq-xYk" kind="show" id="RDu-TI-8tX"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
